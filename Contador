@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Media
+{
+public static void main(String args[])
+{
+var nota = new Scanner(System.in);
+float n1, n2, n3, n4, mf;
+System.out.print("Entre com a sua primeira nota: ");
+n1 = nota.nextFloat();
+
+System.out.print("Entre com a sua segunda nota: ");
+n2 = nota.nextFloat();
+
+System.out.print("Entre com a terceira nota: ");
+n3 = nota.nextFloat();
+
+System.out.print("Entre com a quarta nota: ");
+n4 = nota.nextFloat();
+
+mf = (n1+n2+n3+n4)/4;
+
+if(mf >= 5)
+{
+System.out.print("Voce foi APROVADO! Parabéns!!! ");
+}
+else
+{
+System.out.print("Voce foi REPROVADO! Mais sorte na próxima ");
+}
+System.out.print("A media final eh de: " + mf + " pontos!");
+}
+}
